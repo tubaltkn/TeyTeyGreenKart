@@ -139,6 +139,11 @@ public class addToCart extends BasePage {
 
 
     }
+
+//
+//    @When("User clicks on search box")
+//    public void userClicksOnSearchBox() {
+//    }
 }
 
 

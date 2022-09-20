@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "User navigates to the link",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3759000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user navigates to the link",
+            "match": {
+              "location": "com.greenKart.stepDefs.addToCart.userNavigatesToTheLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3132000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks on search box",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userClicksOnSearchBox()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-20T11:59:19.977Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2859000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.greenKart.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "User should be able to copy typed text from the search box.",
+        "description": "",
+        "id": "search-box-testing;user-should-be-able-to-copy-typed-text-from-the-search-box.",
+        "after": [
+          {
+            "result": {
+              "duration": 756000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.greenKart.stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5125000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User enters random characters in the search box.",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userEntersRandomCharactersInTheSearchBox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15180000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User copies the text from the search box.",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userCopiesTheTextFromTheSearchBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User will be able to copy typed text from and paste it to the search box.",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userWillBeAbleToCopyTypedTextFromAndPasteItToTheSearchBox()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "search box testing",
+    "description": "",
+    "id": "search-box-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/searchFunction.feature",
+    "tags": []
+  }
+]
