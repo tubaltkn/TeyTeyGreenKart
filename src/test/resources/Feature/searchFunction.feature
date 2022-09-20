@@ -20,25 +20,49 @@ Feature: search box testing
 #  Check whether the auto-suggestion is working or not
 
   Background: User navigates to the link
-    Given User navigates to the link
+    Given user navigates to the link
+    When User clicks on search box
+
+  Scenario: User should be able to type or enter in the search box.
+
+    When User enters a random characters in the search box.
+    Then User will be able to type in the search box.
 
   Scenario: User should be able to search field and press Enter key.
 
-  Scenario Outline: User should not be able to find results when it is not typed text
-    Examples: User should not be able to find results when it is entered numbers
-    Examples: User should not be able to find results when it is entered special characters
+    When User enters a random product name
+    And User presses Enter key.
+    Then User will be able to find that product.
 
 
-  Scenario: User should be able to see the typed text properly
+  Scenario: User should be able to see the typed text properly.
 
-  Scenario: User should be able to type or enter in the search box
+    When User enters a random characters in the search box.
+    Then User will be able to see the typed letters in the search box.
 
-  Scenario: User should be able to
 
+  Scenario: User should be able to copy typed text from the search box.
+    When User enters random characters in the search box.
+    And User copies the text from the search box.
+    Then User will be able to copy typed text from and paste it to the search box.
+
+    Scenario: User should be able to paste typed text from the search box.
+
+      When User pastes a typed text in the search box.
+      Then User will be able to paste typed text to the search box.
+
+
+  Scenario: The placeholder at the search box should be "Search for Vegetables and Fruits".
+    Then Verify that the placeholder at the search box should be "Search for Vegetables and Fruits".
+
+
+  Scenario: User should be able to see the auto-suggestion after typing letters in the search box.
+    When user types "c" in the search box
+    Then user will see the product results containing letter "c"
 
 
   Scenario: User should be able to search and find a product
     Given User clicks on search box
-    When User enters "apple"
-    Then user will be able to find "apple"
+    When User enters a random product
+    Then User will be able to find that product.
 

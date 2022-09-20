@@ -1,5 +1,6 @@
 package com.greenKart.stepDefs;
 
+import com.github.javafaker.Faker;
 import com.greenKart.pages.BasePage;
 import com.greenKart.pages.ProductPage;
 import com.greenKart.utilities.BrowserUtils;
@@ -19,6 +20,7 @@ import static java.lang.Integer.parseInt;
 public class addToCart extends BasePage {
 
     Random random=new Random();
+    Faker faker= new Faker();
 
     ProductPage ProductPage = new ProductPage();
 
@@ -115,5 +117,29 @@ public class addToCart extends BasePage {
     }
 
 
+
+
+    @When("user adds {string} {string}")
+    public void userAdds(String quantity, String product) {
+
+        product=randomName;
+
+
+
+
+        }
+
+    @When("user adds random quantity {string} to cart")
+    public void userAddsRandomQuantityToCart(String arg0) {
+
+        quantityBox.clear();
+//        quantityBox.sendKeys(faker.);
+
+
+
+
     }
+}
+
+
 

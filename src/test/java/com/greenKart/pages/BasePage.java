@@ -29,6 +29,9 @@ public abstract class BasePage {
     @FindBy(xpath = "//div/h4[@class='product-name']")
     public List<WebElement> ActualproductsName;
 
+    @FindBy(xpath = "//*[@value='1']")
+    public WebElement quantityBox;
+
 
 
 
@@ -43,18 +46,10 @@ public abstract class BasePage {
 
     }
 
-    public void getRandomQuantity(){
 
-        int randomButton= random.nextInt(AddToCartButtons.size());
-        AddToCartButtons.get(randomButton).click();
-    }
 
     public void getRandomIncrement(){
 
-
-
-        int randomIncrement= random.nextInt(incrementButtons.size());
-        incrementButtons.get(randomIncrement).click();
 
     }
 
