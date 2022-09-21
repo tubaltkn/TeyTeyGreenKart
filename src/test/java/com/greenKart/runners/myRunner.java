@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber.json",
                 "html:target/default-html-reports",
                 "rerun:target/rerun.txt"},
-        features = "src/test/resources/features",
+        features = "src/test/resources/Feature",
         glue = "com/greenKart/stepDefs",
         dryRun = false,
         tags = "@wip"

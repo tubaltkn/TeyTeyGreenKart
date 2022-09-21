@@ -25,7 +25,7 @@ Feature: search box testing
 
   Scenario: User should be able to type or enter in the search box.
 
-    When User enters a random characters in the search box.
+    When User enters random characters in the search box.
     Then User will be able to type in the search box.
 
   Scenario: User should be able to search field and press Enter key.
@@ -34,10 +34,10 @@ Feature: search box testing
     And User presses Enter key.
     Then User will be able to find that product.
 
-
+@wip
   Scenario: User should be able to see the typed text properly.
 
-    When User enters a random characters in the search box.
+    When User enters random characters in the search box.
     Then User will be able to see the typed letters in the search box.
 
 
