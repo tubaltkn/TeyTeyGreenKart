@@ -38,6 +38,8 @@ public abstract class BasePage {
 
 
 
+
+
     public void getRandomProduct(){
 
         int randomButton= random.nextInt(AddToCartButtons.size());
