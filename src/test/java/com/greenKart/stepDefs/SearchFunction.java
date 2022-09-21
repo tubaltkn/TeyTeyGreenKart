@@ -16,14 +16,15 @@ public class SearchFunction {
     @When("User clicks on search box")
     public void userClicksOnSearchBox() {
 
-       ProductPage.searchBox.click();
+        ProductPage.searchBox.click();
     }
 
-    @When("User enters a random characters in the search box.")
-    public void userEntersARandomCharactersInTheSearchBox() {
+    @When("User enters random characters in the search box.")
+    public void userEntersRandomCharactersInTheSearchBox() {
         ProductPage.searchBoxBefore= ProductPage.searchBox.getText();
 
-        ProductPage.searchBox.sendKeys((faker.letterify("??")));
+        ProductPage.searchBox.sendKeys(faker.letterify("??"));
+
     }
 
     @Then("User will be able to type in the search box.")
@@ -33,7 +34,15 @@ public class SearchFunction {
 
         Assert.assertNotSame(ProductPage.searchBoxBefore, ProductPage.searchBoxAfter);
 
+        System.out.println("ProductPage.searchBoxBefore = " + ProductPage.searchBoxBefore);
 
 
+
+    }
+
+    @When("User enters a random product name")
+    public void userEntersARandomProductName() {
+
+        ProductPage.getRandomProduct();
     }
 }
