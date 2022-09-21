@@ -23,26 +23,27 @@
 #Check the cart total when the exclusive tax is enabled from the admin end.
 #Check the cart total when the inclusive tax is enabled from the admin end.
 #Check that the product details page is open when the user clicks on the product description on the checkout page.
-##Check that the UI of the add to cart is as per the requirement.
+#Check that the UI of the add to cart is as per the requirement.
 
 
   Feature: Checkout Functionality
     Background: user navigates to the  link
       Given user navigates to the link
 
-@wip
+
     Scenario: user should be able to click on the add to cart button
 
       When user should click on the add to cart button
       Then add to cart button is clicked
 
-    Scenario: user should be able to add "<quantity>"  "<product>"
-      When user adds "<quantity>" " <product>"
-        | <quantity>|<product>|
-        |1          |Brocolli |
-        |5          |Apple    |
-        |10         |Grapes   |
-      Then will be able to add "<quantity>" "<product>"
+    Scenario: user should be able to add random quantity " <product>" to cart
+      When user adds random quantity " <product>" to cart
+        |<product>|
+        |Brocolli |
+        |Apple    |
+        |Grapes   |
+
+      Then user will be able to add "<quantity>" "<product>"
 
 
     Scenario: The quantity of the product increases by the increment button.

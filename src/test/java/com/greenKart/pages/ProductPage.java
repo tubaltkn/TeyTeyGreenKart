@@ -9,6 +9,9 @@ import java.util.List;
 
 public class ProductPage extends BasePage{
 
+    public static String searchBoxBefore;
+    public static String searchBoxAfter;
+
 
     @FindBy(xpath = "//button[contains(text(),'ADD TO CART')]")
     public List<WebElement> AddToCartButtons;
@@ -21,6 +24,12 @@ public class ProductPage extends BasePage{
 
     @FindBy(xpath = "//table/tbody/tr[2]/td[3]/strong")
     public WebElement price;
+
+    @FindBy (xpath = "//*//form/input")
+    public WebElement searchBox;
+
+
+
 
 
     public void quantity(String count,String product){
