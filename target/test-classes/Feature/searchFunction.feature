@@ -34,13 +34,13 @@ Feature: search box testing
     And User presses Enter key.
     Then User will be able to find that product.
 
-
+@wip
   Scenario: User should be able to see the typed text properly.
 
-    When User enters a random characters in the search box.
+    When User enters random characters in the search box.
     Then User will be able to see the typed letters in the search box.
 
-@wip
+
   Scenario: User should be able to copy typed text from the search box.
     When User enters random characters in the search box.
     And User copies the text from the search box.
