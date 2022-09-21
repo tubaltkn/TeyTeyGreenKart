@@ -12,20 +12,20 @@ public class SearchFunction {
     Faker faker = new Faker();
 
 
-
-    @When("User clicks on search box")
-    public void userClicksOnSearchBox() {
-
-        ProductPage.searchBox.click();
-    }
-
-    @When("User enters random characters in the search box.")
-    public void userEntersRandomCharactersInTheSearchBox() {
-        ProductPage.searchBoxBefore= ProductPage.searchBox.getText();
-
-        ProductPage.searchBox.sendKeys(faker.letterify("??"));
-
-    }
+//
+//    @When("User clicks on search box")
+//    public void userClicksOnSearchBox() {
+//
+//        ProductPage.searchBox.click();
+//    }
+//
+//    @When("User enters random characters in the search box.")
+//    public void userEntersRandomCharactersInTheSearchBox() {
+//        ProductPage.searchBoxBefore= ProductPage.searchBox.getText();
+//
+//        ProductPage.searchBox.sendKeys(faker.letterify("??"));
+//
+//    }
 
     @Then("User will be able to type in the search box.")
     public void userWillBeAbleToTypeInTheSearchBox() {

@@ -66,6 +66,11 @@ public class searchFunctionStepDef extends BasePage {
         new SearchFunctionPage().createRandomCharacter();
 
     }
+
+    @Then("Verify that the placeholder at the search box should be {string}.")
+    public void verifyThatThePlaceholderAtTheSearchBoxShouldBe(String arg0) {
+      new SearchFunctionPage().getPlaceHolderText();
+    }
 //
 //    @When("User enters a random characters in the search box.")
 //    public void userEntersARandomCharactersInTheSearchBox() {

@@ -33,7 +33,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to copy typed text from the search box.",
+  "name": "The placeholder at the search box should be \"Search for Vegetables and Fruits\".",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,31 +43,11 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "User enters random characters in the search box.",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userEntersRandomCharactersInTheSearchBox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User copies the text from the search box.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userCopiesTheTextFromTheSearchBox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User will be able to copy typed text from and paste it to the search box.",
+  "name": "Verify that the placeholder at the search box should be \"Search for Vegetables and Fruits\".",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userWillBeAbleToCopyTypedTextFromAndPasteItToTheSearchBox()"
+  "location": "com.greenKart.stepDefs.searchFunctionStepDef.verifyThatThePlaceholderAtTheSearchBoxShouldBe(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

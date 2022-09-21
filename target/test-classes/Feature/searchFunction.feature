@@ -34,7 +34,7 @@ Feature: search box testing
     And User presses Enter key.
     Then User will be able to find that product.
 
-@wip
+
   Scenario: User should be able to see the typed text properly.
 
     When User enters random characters in the search box.
@@ -51,7 +51,7 @@ Feature: search box testing
       When User pastes a typed text in the search box.
       Then User will be able to paste typed text to the search box.
 
-
+  @wip
   Scenario: The placeholder at the search box should be "Search for Vegetables and Fruits".
     Then Verify that the placeholder at the search box should be "Search for Vegetables and Fruits".
 

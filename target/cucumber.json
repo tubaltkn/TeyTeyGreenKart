@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3759000000,
+              "duration": 2763000000,
               "status": "passed"
             },
             "line": 23,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 3132000000,
+              "duration": 3154000000,
               "status": "passed"
             },
             "line": 24,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-20T11:59:19.977Z",
+        "start_timestamp": "2022-09-21T16:59:16.780Z",
         "before": [
           {
             "result": {
-              "duration": 2859000000,
+              "duration": 3061000000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 44,
-        "name": "User should be able to copy typed text from the search box.",
+        "line": 55,
+        "name": "The placeholder at the search box should be \"Search for Vegetables and Fruits\".",
         "description": "",
-        "id": "search-box-testing;user-should-be-able-to-copy-typed-text-from-the-search-box.",
+        "id": "search-box-testing;the-placeholder-at-the-search-box-should-be-\"search-for-vegetables-and-fruits\".",
         "after": [
           {
             "result": {
-              "duration": 756000000,
+              "duration": 742000000,
               "status": "passed"
             },
             "match": {
@@ -68,37 +68,19 @@
         "steps": [
           {
             "result": {
-              "duration": 5125000000,
+              "duration": 73000000,
               "status": "passed"
             },
-            "line": 45,
-            "name": "User enters random characters in the search box.",
+            "line": 56,
+            "name": "Verify that the placeholder at the search box should be \"Search for Vegetables and Fruits\".",
             "match": {
-              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userEntersRandomCharactersInTheSearchBox()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 15180000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "User copies the text from the search box.",
-            "match": {
-              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userCopiesTheTextFromTheSearchBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "User will be able to copy typed text from and paste it to the search box.",
-            "match": {
-              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userWillBeAbleToCopyTypedTextFromAndPasteItToTheSearchBox()"
+              "arguments": [
+                {
+                  "val": "\"Search for Vegetables and Fruits\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.verifyThatThePlaceholderAtTheSearchBoxShouldBe(java.lang.String)"
             },
             "keyword": "Then "
           }

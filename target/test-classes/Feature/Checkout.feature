@@ -30,6 +30,7 @@
     Background: user navigates to the  link
       Given user navigates to the link
 
+
     Scenario: user should be able to click on the add to cart button
 
       When user should click on the add to cart button
