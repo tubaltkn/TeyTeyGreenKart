@@ -16,7 +16,7 @@ public class SearchFunction {
     @When("User clicks on search box")
     public void userClicksOnSearchBox() {
 
-       ProductPage.searchBox.click();
+        ProductPage.searchBox.click();
     }
 
     @When("User enters random characters in the search box.")
@@ -35,6 +35,8 @@ public class SearchFunction {
         Assert.assertNotSame(ProductPage.searchBoxBefore, ProductPage.searchBoxAfter);
 
         System.out.println("ProductPage.searchBoxBefore = " + ProductPage.searchBoxBefore);
+
+
 
     }
 
