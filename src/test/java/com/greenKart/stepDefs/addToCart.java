@@ -119,15 +119,11 @@ public class addToCart extends BasePage {
 
 
 
-    @When("user adds {string} {string}")
-    public void userAdds(String quantity, String product) {
-
-        product=randomName;
 
 
 
 
-        }
+
 
     @When("user adds random quantity {string} to cart")
     public void userAddsRandomQuantityToCart(String arg0) {

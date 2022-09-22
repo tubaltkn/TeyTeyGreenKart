@@ -30,7 +30,7 @@ Feature: search box testing
 
   Scenario: User should be able to search field and press Enter key.
 
-    When User enters a random product name
+    When User enters random product name
     And User presses Enter key.
     Then User will be able to find that product.
 
@@ -57,6 +57,6 @@ Feature: search box testing
 
   Scenario: User should be able to search and find a product
     Given User clicks on search box
-    When User enters a random product
+    When User enters random product name
     Then User will be able to find that product.
 

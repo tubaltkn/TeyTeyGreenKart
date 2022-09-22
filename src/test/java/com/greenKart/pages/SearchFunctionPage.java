@@ -36,4 +36,9 @@ public class SearchFunctionPage extends BasePage{
         Assert.assertEquals(writeRandomChar,typedText);
 }
 
+
+
+
 }
+
+

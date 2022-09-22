@@ -1,6 +1,8 @@
 package com.greenKart.pages;
 
+import com.greenKart.utilities.BrowserUtils;
 import com.greenKart.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 import java.util.Random;
 
-public abstract class BasePage {
-
+public abstract class BasePage<Public> {
     public static String  randomName;
 
     public static int beforePrice;
@@ -57,10 +58,18 @@ public abstract class BasePage {
 
     public void getRandomProductName(){
 
-        int randomProduct= random.nextInt(ActualproductsName.size() );
-        randomName=ActualproductsName.get(randomProduct).getText();
+        BrowserUtils.waitFor(5);
 
-        System.out.println("randomName = " + randomName);
+        List<WebElement> elements = Driver.get().findElements(By.xpath("//div/h4[@class='product-name']"));
+        List<String> elementString = BrowserUtils.getElementsText(elements);
+
+        int randomProduct= random.nextInt(elementString.size() );
+        randomName=elementString.get(randomProduct);
+
+        BrowserUtils.waitFor(5);
+        System.out.println(randomName);
+
+
     }
 
 }
