@@ -5,6 +5,7 @@ import com.greenKart.pages.SearchFunctionPage;
 import com.greenKart.utilities.BrowserUtils;
 import com.greenKart.utilities.Driver;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -70,6 +71,23 @@ public class searchFunctionStepDef extends BasePage {
     @Then("Verify that the placeholder at the search box should be {string}.")
     public void verifyThatThePlaceholderAtTheSearchBoxShouldBe(String arg0) {
       new SearchFunctionPage().getPlaceHolderText();
+    }
+
+    @When("user types {string} in the search box")
+    public void userTypesInTheSearchBox(String prod) {
+
+      new SearchFunctionPage().searchALetter(prod);
+
+
+    }
+
+    @Then("user will see the product results containing letter")
+    public void userWillSeeTheProductResultsContainingLetter() {
+
+    }
+
+    @Given("user gets all the list of products")
+    public void userGetsAllTheListOfProducts() {
     }
 //
 //    @When("User enters a random characters in the search box.")

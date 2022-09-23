@@ -46,19 +46,16 @@ Feature: search box testing
     And User copies the text from the search box.
     Then User will be able to copy typed text from and paste it to the search box.
 
-    Scenario: User should be able to paste typed text from the search box.
 
-      When User pastes a typed text in the search box.
-      Then User will be able to paste typed text to the search box.
-
-  @wip
   Scenario: The placeholder at the search box should be "Search for Vegetables and Fruits".
     Then Verify that the placeholder at the search box should be "Search for Vegetables and Fruits".
 
-
+  @wip
   Scenario: User should be able to see the auto-suggestion after typing letters in the search box.
-    When user types "c" in the search box
-    Then user will see the product results containing letter "c"
+
+    Given user types "c" in the search box
+    When user gets all the list of products
+    Then user will see the product results containing letter
 
 
   Scenario: User should be able to search and find a product

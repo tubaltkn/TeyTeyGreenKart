@@ -33,7 +33,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "The placeholder at the search box should be \"Search for Vegetables and Fruits\".",
+  "name": "User should be able to see the auto-suggestion after typing letters in the search box.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,11 +43,31 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "Verify that the placeholder at the search box should be \"Search for Vegetables and Fruits\".",
+  "name": "user types \"c\" in the search box",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userTypesInTheSearchBox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user gets all the list of products",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userGetsAllTheListOfProducts()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user will see the product results containing letter",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.greenKart.stepDefs.searchFunctionStepDef.verifyThatThePlaceholderAtTheSearchBoxShouldBe(java.lang.String)"
+  "location": "com.greenKart.stepDefs.searchFunctionStepDef.userWillSeeTheProductResultsContainingLetter()"
 });
 formatter.result({
   "status": "passed"

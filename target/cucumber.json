@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2763000000,
+              "duration": 2592000000,
               "status": "passed"
             },
             "line": 23,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 3154000000,
+              "duration": 3249000000,
               "status": "passed"
             },
             "line": 24,
@@ -36,11 +36,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-21T16:59:16.780Z",
+        "start_timestamp": "2022-09-22T20:46:16.089Z",
         "before": [
           {
             "result": {
-              "duration": 3061000000,
+              "duration": 3227000000,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 55,
-        "name": "The placeholder at the search box should be \"Search for Vegetables and Fruits\".",
+        "line": 54,
+        "name": "User should be able to see the auto-suggestion after typing letters in the search box.",
         "description": "",
-        "id": "search-box-testing;the-placeholder-at-the-search-box-should-be-\"search-for-vegetables-and-fruits\".",
+        "id": "search-box-testing;user-should-be-able-to-see-the-auto-suggestion-after-typing-letters-in-the-search-box.",
         "after": [
           {
             "result": {
-              "duration": 742000000,
+              "duration": 771000000,
               "status": "passed"
             },
             "match": {
@@ -68,19 +68,41 @@
         "steps": [
           {
             "result": {
-              "duration": 73000000,
+              "duration": 5323000000,
               "status": "passed"
             },
             "line": 56,
-            "name": "Verify that the placeholder at the search box should be \"Search for Vegetables and Fruits\".",
+            "name": "user types \"c\" in the search box",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Search for Vegetables and Fruits\"",
-                  "offset": 56
+                  "val": "\"c\"",
+                  "offset": 11
                 }
               ],
-              "location": "com.greenKart.stepDefs.searchFunctionStepDef.verifyThatThePlaceholderAtTheSearchBoxShouldBe(java.lang.String)"
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userTypesInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user gets all the list of products",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userGetsAllTheListOfProducts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user will see the product results containing letter",
+            "match": {
+              "location": "com.greenKart.stepDefs.searchFunctionStepDef.userWillSeeTheProductResultsContainingLetter()"
             },
             "keyword": "Then "
           }

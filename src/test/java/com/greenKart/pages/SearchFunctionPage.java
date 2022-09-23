@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class SearchFunctionPage extends BasePage {
@@ -18,6 +20,9 @@ public class SearchFunctionPage extends BasePage {
 
     @FindBy(xpath = "//input[@placeholder='Search for Vegetables and Fruits']")
     public WebElement placeHolder;
+
+    @FindBy(xpath = "//div/h4[@class='product-name']")
+            public WebElement icludeLetterProduct;
 
     Random random = new Random();
 
@@ -42,6 +47,27 @@ public class SearchFunctionPage extends BasePage {
     public void getPlaceHolderText() {
         String placeHolder = Driver.get().findElement(By.xpath("//input[@type='search']")).getAttribute("placeholder");
         System.out.println(placeHolder);
+    }
+
+
+    public void searchALetter(String letter){
+        searchButton.click();
+        searchButton.sendKeys(letter);
+        BrowserUtils.waitFor(5);
+
+        List<WebElement> products = Driver.get().findElements(By.xpath("//div/h4[@class='product-name']"));
+        List<String> productString = BrowserUtils.getElementsText(products);
+
+        for(int i=0;i<productString.size();i++){
+
+            String a = productString.get(i).toLowerCase();
+            System.out.println(a);
+           Assert.assertTrue(a.contains(letter));
+
+
+        }
+
+
     }
 
     }
